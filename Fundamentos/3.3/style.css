@@ -11,18 +11,17 @@ html{
     font-family: "Mario-font";
 }
 
-#title-header{
-    color: white;
-    text-shadow:  6px 4px 2px  black;
-    text-align: center;
-}
-
 body {
     
     background-image: url(./image/background-mario.jpg);
     background-position: contain;
     background-size: cover;
     z-index: 0;
+}
+#title-header, #title-author{
+    color: white;
+    text-shadow:  6px 4px 2px  black;
+    text-align: center;
 }
 
 .super-mario {
@@ -65,3 +64,4 @@ body {
     left: 67%;
     transform: rotate(-4deg);
 }
+
