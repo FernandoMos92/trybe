@@ -1,0 +1,17 @@
+h1, p{
+    text-align: center;
+}
+
+li{
+    width: 180px;
+    list-style: none;
+}
+
+li:hover{
+    background-color: rgb(236, 5, 5);
+    color: #FFF;
+}
+li:active{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
