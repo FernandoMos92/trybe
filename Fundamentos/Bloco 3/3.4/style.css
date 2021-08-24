@@ -1,9 +1,9 @@
 :root{
-    --bgColor: #FDF0D5;
-    --naveColor: #C6D8D3;
+    --bgColor: #f8f6f1;
+    --naveColor: #ff8f8b;
     --ftColor: #3A3335;
-    --importantInfo: #F0544F;
-    --rubyColor:#D81E5B;
+    --importantInfo: #c84d76;
+    --rubyColor:#c84d76;
     --mainHeader: font-family: 'Stone-sans';
 }
 
@@ -23,18 +23,11 @@ body{
     box-sizing: border-box;
 }
 
-header h1 {
-    background-color: var(--naveColor);
-    padding: 5px;
-    margin-top:0;
-    margin-bottom: 0;
-    text-align: center;
-    text-shadow: 2px 2px 3px white;
+header nav {
+    background-color: var(--naveColor)
 }
 
 header nav ul{
-    border-top: 4px groove white;
-    border-bottom: 4px groove white;
     margin-top:0px;
     text-align: center;
 }
@@ -47,15 +40,51 @@ header nav ul li{
     padding: 10px;
 }
 
-
-
 header nav ul li a {
     text-decoration: none;
     color: var(--ftColor);
+    font-weight: bold;
 }
 header nav ul li a:hover{
-    background-color: var(--importantInfo);
-    color: var(--bgColor);
-    border-radius: 5%;
+    text-shadow: 1px 1px 2px white;
+    text-decoration: underline;
     cursor: pointer;
 }
+
+main h1 {
+    margin-top:0;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+    text-decoration: underline;
+}
+
+main h2, main h3 {
+    text-align:center;
+}
+
+main section ol {
+    width: 600px;
+    margin:0 auto;
+}
+
+.picture-mantis{
+    width: 250px;
+}
+
+main section p {
+    text-align: center;
+}
+
+main section table {
+    margin:0 auto;
+    
+}
+
+footer{
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: var(--naveColor)
+}
+
