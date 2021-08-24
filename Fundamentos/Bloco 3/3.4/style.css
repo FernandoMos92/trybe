@@ -1,0 +1,61 @@
+:root{
+    --bgColor: #FDF0D5;
+    --naveColor: #C6D8D3;
+    --ftColor: #3A3335;
+    --importantInfo: #F0544F;
+    --rubyColor:#D81E5B;
+    --mainHeader: font-family: 'Stone-sans';
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgColor);
+    color: var(--ftColor);
+    font-family: helvetica, arial, sans;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    background-color: var(--naveColor);
+    padding: 5px;
+    margin-top:0;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+}
+
+header nav ul{
+    border-top: 4px groove white;
+    border-bottom: 4px groove white;
+    margin-top:0px;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 150px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--ftColor);
+}
+header nav ul li a:hover{
+    background-color: var(--importantInfo);
+    color: var(--bgColor);
+    border-radius: 5%;
+    cursor: pointer;
+}
