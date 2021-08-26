@@ -68,9 +68,18 @@ if(a > b && a > c){
  }
 
  /**
-  * Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+  *5. Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
   * 
   * Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
   * 
   * Um ângulo será considerado inválido se não tiver um valor positivo.
   */
+ const num1 = 30;
+ const num2 = 70;
+ const num3 = 80;
+
+ if(num1 + num2 + num3 === 180){
+    console.log(`O numero de entrada somandos, dão angulo de 180 graus.`);
+ }else{
+    console.log(`ERROR!! Os numeros de entrada NÃO são para um triângulo.`);
+ }
