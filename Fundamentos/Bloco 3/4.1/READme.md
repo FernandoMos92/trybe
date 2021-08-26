@@ -95,7 +95,7 @@ Nos exercícios de hoje, você vai fazer quinze pequenos programas. Todos trabal
   <li>Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.</li>
   </ul>
 </li>
-### Exemplo: Uma pessoa possui o salário bruto de R$ 3.000,00. O cálculo será:
+## Exemplo: Uma pessoa possui o salário bruto de R$ 3.000,00. O cálculo será:
   <ul>
     <li>O salário bruto está entre R$ 2.594,93 e R$ 5.189,82, então sua alíquota para INSS é de 11%. O INSS será 11% de R$ 3.000, ou seja, R$ 330,00.</li>
     <li>Para descobrir o salário-base, subtraia do salário bruto a alíquota do INSS: R$ 3.000,00 - R$ 330,00 = R$ 2.670,00.</li>
@@ -107,9 +107,9 @@ Nos exercícios de hoje, você vai fazer quinze pequenos programas. Todos trabal
       </ul>
       <li>Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45</li>
       <li>O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
-      #### Resultado: R$ 2.612,55.
+      ## Resultado: R$ 2.612,55.
 
-      ##### Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
+      ## Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
       </li>
     </li>
   </ul>
