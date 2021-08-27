@@ -7,7 +7,8 @@ Leia atentamente os enunciados e faça o que se pede! Iremos utilizar esse array
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 <ol>
-  <li>Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log() ;</li>
+  <li>Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log() ;
+  </li>
   <br>
   <li>Para o segundo exercício, some todos os valores contidos no array e imprima o resultado;</li>
   <br>
