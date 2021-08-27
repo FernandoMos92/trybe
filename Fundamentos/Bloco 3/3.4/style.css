@@ -1,0 +1,90 @@
+:root{
+    --bgColor: #f8f6f1;
+    --naveColor: #ff8f8b;
+    --ftColor: #3A3335;
+    --importantInfo: #c84d76;
+    --rubyColor:#c84d76;
+    --mainHeader: font-family: 'Stone-sans';
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgColor);
+    color: var(--ftColor);
+    font-family: helvetica, arial, sans;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    background-color: var(--naveColor)
+}
+
+header nav ul{
+    margin-top:0px;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 150px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--ftColor);
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    text-shadow: 1px 1px 2px white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main h1 {
+    margin-top:0;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+    text-decoration: underline;
+}
+
+main h2, main h3 {
+    text-align:center;
+}
+
+main section ol {
+    width: 600px;
+    margin:0 auto;
+}
+
+.picture-mantis{
+    width: 250px;
+}
+
+main section p {
+    text-align: center;
+}
+
+main section table {
+    margin:0 auto;
+    
+}
+
+footer{
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: var(--naveColor)
+}
+
