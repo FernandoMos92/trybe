@@ -109,7 +109,7 @@ console.log(info);
    recorrente
  */
 for (let key in info) {
-  console.log(key)
+  console.log(key);
 }
 
 /**
@@ -121,7 +121,7 @@ Namorada do personagem principal nos quadrinhos do Pato Donald
 Sim
  */
 for (let key in info) {
-  console.log(`${key} : ${info[key]}`)
+  console.log(`${key} : ${info[key]}`);
 }
 
 /**
@@ -133,14 +133,138 @@ for (let key in info) {
   Ambos recorrentes // Atenção para essa última linha!
  */
 
-  let info2 = {
-    personagem: "Tio Patinhas",
-    origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
-    nota: "O último MacPatinhas",
-    recorrentes: 'Sim'
-  };
+let info2 = {
+  personagem: "Tio Patinhas",
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: "O último MacPatinhas",
+  recorrentes: "Sim",
+};
 
-  console.log(`  ${info.personagem} e ${info2.personagem}
+console.log(`  ${info.personagem} e ${info2.personagem}
   ${info.origem} e ${info2.origem}
   ${info.nota} e ${info2.nota}
-  ${info.recorrentes === info2.recorrentes ? 'Ambos recorrentes' : info.recorrentes + ' e ' + info2.recorrentes}`)
+  ${
+    info.recorrentes === info2.recorrentes
+      ? "Ambos recorrentes"
+      : info.recorrentes + " e " + info2.recorrentes
+  }`);
+
+/**
+   * Parte II - Funções
+Agora vamos fazer um exercício que vai deixar nítido como funções com responsabilidades bem definidas deixam o código mais bem escrito.
+A manipulação de arrays pode ser complexa em alguns momentos e por isso o JavaScript conta com diversos métodos para a sua manipulação. A documentação é sempre a nossa maior aliada, se você tiver curiosidade de ler mais sobre esses métodos, clique aqui para acessar a documentação completa. Não se preocupe em entender todos os métodos, eles serão trabalhados cada vez com mais frequência durante o curso e sempre que um método novo for necessário ele será ensinado a você.
+Spoiler-alert : para os exercícios do dia, os métodos split , join e reverse podem ser muito úteis.
+   */
+
+/**
+ * 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+Exemplo de palíndromo: arara .
+verificaPalindrome('arara') ;
+Retorno esperado: true
+verificaPalindrome('desenvolvimento') ;
+Retorno esperado: false
+ */
+const testPalindromo = (str) => {
+  let newStr = str.split("").reverse().join("");
+  if (str === newStr) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+testPalindromo("arara");
+testPalindromo("desenvolvimento");
+
+/**
+ * 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+Array de teste: [2, 3, 6, 7, 10, 1]; .
+Valor esperado no retorno da função: 4 .
+ */
+const numbers = [2, 3, 6, 7, 10, 1];
+const findIndex = (arr) => {
+  let maxNumber = arr[0];
+  let findI = 0;
+  arr.map((el, index) => {
+    if (el > maxNumber) {
+      maxNumber = el;
+      findI = index;
+    }
+  });
+  console.log(findI);
+};
+
+findIndex(numbers);
+
+/**
+ * 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+Valor esperado no retorno da função: 6 .
+ */
+
+const numbers = [2, 4, 6, 7, 10, 0, -3];
+
+const findLessindex = (arr) => {
+  let maxNumber = arr[0];
+  let findI = 0;
+  arr.map((el, index) => {
+    if (el < maxNumber) {
+      maxNumber = el;
+      findI = index;
+    }
+  });
+  console.log(findI);
+};
+
+findLessindex(numbers);
+
+/**
+ * 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+Valor esperado no retorno da função: Fernanda .
+ */
+let input = ["José", "Lucas", "Nádia", "Janaina", "Cairo"];
+
+const biggerWord = (str) => {
+  let newStr = str[0];
+  for (let i in str) {
+    if (newStr.length < str[i].length) {
+      newStr = str[i];
+    }
+  }
+  return console.log(newStr);
+};
+biggerWord(input);
+
+/**
+ * 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
+Valor esperado no retorno da função: 2 .
+repeat
+ */
+
+
+
+/**
+ * 6 - Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+Valor de teste: N = 5 .
+Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
+ */
+
+const counterThen = (number) => {
+  let result = 0;
+  for (let index = 0; index <= number; index += 1) {
+    result += index;
+  }
+  return console.log(result);
+};
+counterThen(3);
+
+/**
+ * 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+Valor de teste: 'trybe' e 'be'
+Valor esperado no retorno da função: true
+verificaFimPalavra('trybe', 'be') ;
+Retorno esperado: true
+verificaFimPalavra('joaofernando', 'fernan') ;
+Retorno esperado: false
+ */
