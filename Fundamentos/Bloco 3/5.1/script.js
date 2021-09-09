@@ -14,3 +14,5 @@ secondParagraph.innerHTML = "O terceiro ano de Harry Potter em Hogwarts começa 
 
 const secondTitle = document.getElementById("subtitle");
 secondTitle.innerHTML = "Resumo";
+
+const subTitle  = document.getElementsByTagName('h4');
