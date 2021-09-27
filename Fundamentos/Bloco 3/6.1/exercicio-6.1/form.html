@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Form</h1>
+    </div>
+
+    <main>
+      <fieldset>
+        <label for="inputName">Name:</label>
+        <input
+          type="text"
+          maxlength="40"
+          required
+          name="inputName"
+          id="inputName"
+        />
+        <label for="inputEmail">Email address:</label>
+        <input
+          type="email"
+          name="inputEmail"
+          id="inputEmail"
+          maxlength="50"
+          required
+        />
+        <label for="inputCpf">CPF:</label>
+        <input
+          type="text"
+          name="inputCpf"
+          id="inputCpf"
+          maxlength="11"
+          required
+        />
+        <hr />
+        <label for="inputAddress">Address:</label>
+        <input
+          type="text"
+          name="inputAddress"
+          id="inputAddress"
+          maxlength="200"
+          required
+        />
+        <label for="inputCity">City:</label>
+        <input
+          type="text"
+          name="inputCity"
+          id="inputCity"
+          maxlength="28"
+          required
+        />
+        <label for="selectStates">State:</label>
+        <select name="selectStates" id="selectStates" required></select>
+        <label for="inputHouse">House</label>
+        <input type="radio" name="optionHouse" id="inputHouse" />
+        <label for="inputApartament">Apartment</label>
+        <input type="radio" name="optionHouse" id="inputApartament" />
+      </fieldset>
+      <fieldset>
+        <label for="summaryResume">Resume Summary:</label>
+        <textarea
+          name="summaryResume"
+          id="summaryResume"
+          cols="30"
+          rows="10"
+          maxlength="1000"
+          required
+        >
+        </textarea>
+        <label for="inputResponsibility">Responsibility: </label>
+        <input
+          type="text"
+          name="inputResponsibility"
+          id="inputResponsibility"
+          maxlength="40"
+          required
+        />
+        <label for="description">Descripition responsibility:</label>
+        <input
+          type="text"
+          name="description"
+          id="description"
+          maxlength="500"
+          required
+        />
+        <label for="startDate">Start date: </label>
+        <input type="date" name="startDate" id="startDate" required/>
+      </fieldset>
+
+      <button type="submit">Send</button>
+      <button type="reset">Clean up</button>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
