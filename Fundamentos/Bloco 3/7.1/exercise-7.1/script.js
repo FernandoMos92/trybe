@@ -1,3 +1,5 @@
+//PART I 
+
 /**
  *1 - Agora você vai fazer alguns exercícios de fixação.
   Faça as modificações necessárias na função para que o seu comportamento respeite o escopo no qual cada variável foi declarada.
@@ -28,3 +30,30 @@ Bônus (opcional): tente fazer o mesmo exercício utilizando o método array.sor
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 oddsAndEvens.sort((a, b) => a -b);
 console.log(oddsAndEvens)
+
+//PART II
+
+/**
+ *1 - Crie uma função que receba um número e retorne seu fatorial.
+  Na matemática, o fatorial de um número não negativo N , com a notação N! , é o produto de todos os inteiros menores ou iguais a N . Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
+  Bônus (opcional): tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator .
+ */
+
+  const numFatorial = (num) => {
+    let result = num;
+    for (let i = 1; i < num ; i += 1) {
+       result *= i;
+    }
+    console.log(result);
+  }
+
+  numFatorial(4);
+
+  // 2 - Crie uma função que receba uma frase e retorne qual a maior palavra.
+  const longestWord = (phrase) => {
+    const biggerWord = phrase.split(' ');
+    biggerWord.length;
+    console.log(biggerWord)
+  }
+
+  longestWord('Odio da porraaaaa'); 
