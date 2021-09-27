@@ -71,3 +71,14 @@ function getPosition(obj, position) {
   return currentPosition;
 }
 //8. Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+function verifyKeyValue(obj, key, value) {
+  for (const key in obj) {
+    
+    if (key === key && obj[key] === value) {
+      console.log(obj[key]);
+    }else {
+     console.log('ERROR: Valor não existe');
+    }
+  }  
+}
+
