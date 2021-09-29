@@ -1,5 +1,6 @@
-const {sum, myRemove} = require('./script.js');
+const {sum, myRemove, myFizzBuzz} = require('./script.js');
 
+//case test for sum
 describe('Verifica se está somando', ()=>{
   it("Teste se o retorno de sum(4, 5) é 9", ()=>{
     expect(sum(4, 5)).toBe(9)
@@ -14,6 +15,7 @@ describe('Verifica se está somando', ()=>{
   })
 });
 
+//case test for myRemove
 describe("Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado", ()=>{
   it("Válidando a saida", ()=>{
     expect(myRemove([1, 2, 3, 4], 3)).toBe('[1,2,4]');
@@ -27,3 +29,22 @@ describe("Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esper
     }).toThrow(Error);
   })
 });
+
+//case test for myFizzBuzz
+describe("Test for function myFizzBuzz", ()=>{
+  it("Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado", ()=>{
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+  })
+  it("Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado", ()=>{
+    expect(myFizzBuzz(6)).toBe('fizz');
+  })
+  it("Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado", ()=>{
+    expect(myFizzBuzz(5)).toBe('buzz');
+  })
+  it("Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado", ()=>{
+    expect(myFizzBuzz(1)).toBe(1);
+  })
+  it("Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado", ()=>{
+    expect(myFizzBuzz('test')).toBe(false);
+  })
+})
