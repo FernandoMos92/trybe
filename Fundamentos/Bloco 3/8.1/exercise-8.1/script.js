@@ -65,23 +65,22 @@ Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desc
 // quando incorreta desce 0.5 pontos
 // se não houver resposta "N.A" não atera a contagem
 
-const checkTest = ['A', 'B', 'A', 'D', 'C'];
-const studyAnswers = ['A', '','A', 'D', 'A'];
-
+const right_answer = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const student_answers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 function check(a, b) {
   let counter = 0;
-  for (let index = 0; index < 5; index += 1) {
+  for (let index = 0; index < right_answer.length; index += 1) {
     if (a[index] === b[index]){
       counter += 1;
-    } else if (a[index] !== b[index] && b[index] !== ''){
+    } else if (a[index] !== b[index] && b[index] !== 'N.A'){
       counter -= 0.5;
     }
   }
   return counter;
 }
 
-const verifyTest = (checkTest, studyAnswers, func) => {
-  return func(checkTest, studyAnswers);
+const verifyTest = (arr1, arr2, func) => {
+  return func(arr1, arr2);
 }
 
-console.log(verifyTest(checkTest, studyAnswers, check));
+console.log(verifyTest(right_answer, student_answers, check));
