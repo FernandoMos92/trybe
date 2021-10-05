@@ -35,3 +35,19 @@ emailListInData.forEach(showEmailList);
  }
  
  console.log(findDivisibleBy3And5(numbers));
+
+/**
+ * 2 - Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
+ */
+ const names = ['João', 'Irene', 'Fernando', 'Maria'];
+
+ const findNameWithFiveLetters = (arr) => {
+   return arr.find(el => {
+     let nameSplit = el.split('');
+     if(nameSplit.length >= 5){
+      return nameSplit
+     }
+   });
+ }
+ 
+ console.log(findNameWithFiveLetters(names));
