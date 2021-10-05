@@ -63,4 +63,13 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// 5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+const expectedResult = false;
+
+//século XX de 1901 até 2000;
+
+function everyoneWasBornOnSecXX() {
+  return books.every(el => el.author.birthYear <= 1901 || el.author.birthYear >= 2000);
+}
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
