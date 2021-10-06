@@ -81,4 +81,4 @@ const formatedBookNames = () => {
 
 formatedBookNames();
 
-// assert.deepStrictEqual(formatedBookNames(), expectedResult);
+assert.deepStrictEqual(formatedBookNames(), expectedResult);
