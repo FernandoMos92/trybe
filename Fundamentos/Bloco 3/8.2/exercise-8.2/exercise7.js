@@ -63,4 +63,14 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+//7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
+
+const expectedResult = false;
+
+function authorUnique() {
+  return books.every(el => !books.some(elSome => elSome.author.birthYear === el.author.birthYear) && elSome.author.name !== el.author.name);
+}
+
+authorUnique();
+
+assert.strictEqual(authorUnique(), expectedResult);
