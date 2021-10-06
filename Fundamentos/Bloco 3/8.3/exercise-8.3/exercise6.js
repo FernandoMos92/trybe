@@ -71,7 +71,7 @@ const expectedResult = [
   'O Chamado de Cthulhu',
 ];
 
-function oldBooks() {
+const oldBooks = () => {
   const currentYear = new Date().getUTCFullYear();
   const findBooksOld = books.filter(el => currentYear - el.releaseYear > 60);
   const resultSearch = findBooksOld.map(el => el.name);

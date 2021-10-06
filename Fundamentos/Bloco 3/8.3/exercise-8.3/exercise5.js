@@ -72,7 +72,7 @@ const expectedResult = [
   'J. R. R. Tolkien',
 ];
 
-function fantasyOrScienceFictionAuthors() {
+const fantasyOrScienceFictionAuthors = () => {
   const findAuthor = books.filter(el => el.genre === 'Fantasia' || el.genre === 'Ficção Científica')
   const nameAuthor = findAuthor.map(el => el.author.name).sort();
 

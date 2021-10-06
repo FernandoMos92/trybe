@@ -67,7 +67,7 @@ const books = [
 
 const expectedResult = 'O Senhor dos Anéis';
 
-function authorWith3DotsOnName() {
+const authorWith3DotsOnName = () => {
   const findAuthor = books.find(el => el.author.name.split('').filter(letter => letter.endsWith('.')).length === 3).name;
   return findAuthor;
 }
