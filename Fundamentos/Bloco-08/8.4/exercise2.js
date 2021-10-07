@@ -67,8 +67,11 @@ const books = [
 const expectedResult = "George R. R. Martin,J. R. R. Tolkien,Isaac Asimov,Frank Herbert,Stephen King,H. P. Lovecraft";
 
 function reduceNames() {
-  const defaultReturn = books.map(el => el.author.name);
-  return defaultReturn.toString('');
+  const defaultReturn = books.reduce((initialValue, currentValue) => {
+    initialValue.push(currentValue.author.name);
+    return initialValue;
+  }, []);
+  return defaultReturn.join(',');
 }
 
 assert.deepStrictEqual(reduceNames(), expectedResult);
