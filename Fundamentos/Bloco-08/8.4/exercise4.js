@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const books = [
   {
     id: 1,
@@ -62,8 +64,6 @@ const books = [
 ];
 
 //4 - Encontre o livro com o maior nome.
-
-
 const expectedResult = {
   id: 1,
   name: 'As Crônicas de Gelo e Fogo',
@@ -76,5 +76,13 @@ const expectedResult = {
 };
 
 function longestNamedBook() {
-  // escreva seu código aqui
+  const biggerName = books.reduce((initialValue, currentValue) =>{
+   return currentValue.name.length > initialValue.name.length ? initialValue = currentValue: initialValue;
+  }, {
+    name:'',
+  })
+  return biggerName;
 }
+
+longestNamedBook();
+assert.deepStrictEqual(longestNamedBook(), expectedResult);
