@@ -6,10 +6,12 @@ const arrays = [
 ];
 
 function flatten(arr) {
-  const singleArray = [];
-  arr.map(el => el.forEach(elMatriz => singleArray.push(elMatriz)));
-  return singleArray;
+  const singleArr = arrays.reduce((initValue, currentValue)=>{
+  currentValue.forEach(el => initValue.push(el));
+  return initValue;
+  }, []);
+
+  return singleArr;
 }
 
 console.log(flatten(arrays));
-
