@@ -63,22 +63,26 @@ const books = [
   },
 ];
 
-// 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-];
+//4 - Encontre o livro com o maior nome.
+const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+};
 
-const formatedBookNames = () => {
-  let expectResult;
-  books.map(el => expectResult = [`${el.name}-${el.genre}-${el.author.name}`]);
-  return expectedResult;
+const longestNamedBook = () => {
+  const biggerName = books.reduce((initialValue, currentValue) =>{
+   return currentValue.name.length > initialValue.name.length ? initialValue = currentValue: initialValue;
+  }, {
+    name:'',
+  })
+  return biggerName;
 }
 
-formatedBookNames();
-
-assert.deepStrictEqual(formatedBookNames(), expectedResult);
+longestNamedBook();
+assert.deepStrictEqual(longestNamedBook(), expectedResult);

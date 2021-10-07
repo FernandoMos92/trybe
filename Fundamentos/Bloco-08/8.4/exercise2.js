@@ -1,3 +1,4 @@
+//2 - Crie uma string com os nomes de todas as pessoas autoras.
 const assert = require('assert');
 
 const books = [
@@ -63,22 +64,15 @@ const books = [
   },
 ];
 
-// 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-];
+const expectedResult = "George R. R. Martin,J. R. R. Tolkien,Isaac Asimov,Frank Herbert,Stephen King,H. P. Lovecraft";
 
-const formatedBookNames = () => {
-  let expectResult;
-  books.map(el => expectResult = [`${el.name}-${el.genre}-${el.author.name}`]);
-  return expectedResult;
+const reduceNames = () => {
+  const defaultReturn = books.reduce((initialValue, currentValue) => {
+    initialValue.push(currentValue.author.name);
+    return initialValue;
+  }, []);
+  return defaultReturn.join(',');
 }
+reduceNames(books);
 
-formatedBookNames();
-
-assert.deepStrictEqual(formatedBookNames(), expectedResult);
+assert.deepStrictEqual(reduceNames(), expectedResult);
