@@ -66,7 +66,7 @@ const books = [
 
 const expectedResult = "George R. R. Martin,J. R. R. Tolkien,Isaac Asimov,Frank Herbert,Stephen King,H. P. Lovecraft";
 
-function reduceNames() {
+const reduceNames = () => {
   const defaultReturn = books.reduce((initialValue, currentValue) => {
     initialValue.push(currentValue.author.name);
     return initialValue;

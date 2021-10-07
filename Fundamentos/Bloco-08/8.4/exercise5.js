@@ -13,7 +13,7 @@ const expected = {
   a:11,
 }
 
-function containsA() {
+const containsA = () => {
   const amountLetters = names.reduce((intialValue, currentValue) => {
     let splitWords = currentValue.split('');
     for (const item of splitWords) {
