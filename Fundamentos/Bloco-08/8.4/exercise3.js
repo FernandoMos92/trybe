@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const books = [
   {
     id: 1,
@@ -65,6 +67,14 @@ const books = [
 
 const expectedResult = 43;
 
-function averageAge() {
-  // escreva seu código aqui
-}
+const averageAge = () => {
+  const mediaAge = books.map(el => el.releaseYear - el.author.birthYear).reduce((intialValue, currentValue) => {
+    intialValue += currentValue;
+    return intialValue
+  }, 0)
+  return mediaAge / books.length;
+};
+
+averageAge();
+
+assert.deepStrictEqual(averageAge(), expectedResult);

@@ -73,5 +73,6 @@ function reduceNames() {
   }, []);
   return defaultReturn.join(',');
 }
+reduceNames(books);
 
 assert.deepStrictEqual(reduceNames(), expectedResult);
