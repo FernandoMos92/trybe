@@ -1,9 +1,13 @@
+const assert = require('assert');
+
 //1 - Dada uma matriz, transforme em um array.
 const arrays = [
   ['1', '2', '3'],
   [true],
   [4, 5, 6],
 ];
+
+const expectedResult = ['1', '2', '3', true, 4, 5, 6];
 
 function flatten(arr) {
   const singleArr = arrays.reduce((initValue, currentValue)=>{
@@ -14,4 +18,4 @@ function flatten(arr) {
   return singleArr;
 }
 
-console.log(flatten(arrays));
+assert.deepStrictEqual(flatten(arrays), expectedResult);
