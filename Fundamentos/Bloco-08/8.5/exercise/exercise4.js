@@ -34,4 +34,4 @@ const filterPeople = (obj) => {
   return personFilter;
 };
 
-console.log(filterPeople(people));
+filterPeople(people);
