@@ -30,9 +30,7 @@ const studentAverage = () => {
     });
     return initialValue;
   }, 
-  [
-    
-]);
+  []);
 return newObj;
 }
 

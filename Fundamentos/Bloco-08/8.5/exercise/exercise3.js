@@ -15,6 +15,8 @@ const gunnar = {
   nationality: 'Icelandic',
 };
 
+
+
 const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
 
 console.log(personLikes(alex));
