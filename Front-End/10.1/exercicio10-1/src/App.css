@@ -1,53 +1,56 @@
+:root { 
+  --defaulColor: rgb(36, 138, 27);
+  --fontColor: rgb(255, 255, 255);
+  --cardColor: rgba(158, 157, 157, 0.74);
+}
+
 html{
   width: 100vw;
   height: 100vh;
 }
 
 header {
-  width: 100vw;
-  height:10vh;
   position: fixed;
   top: 0;
+}
+
+.generic-class {
+  width: 100vw;
+  height:10vh;
+  color: var(--fontColor);
+  background-color: var(--defaulColor);
+  font-style: italic;
   text-align: center;
   box-sizing: border-box;
-  background-color: rgb(36, 138, 27);
-  color: white;
-  font-style: italic;
+  margin: 0;
 }
 
 main {
+  overflow: auto;
   display:flex;
   height: 90vh;
-  overflow: auto;
-  padding: 20px;
+  padding: 1.5em;
 }
 
 .container-main{
-  width: 300px;
-  height: 200px;
-  margin-right: 20px;
   overflow: auto;
-  margin-top:4rem;
-  padding: 20px;
-  background-color: rgb(158, 157, 157);
-  box-shadow: 2px 2px 8px black;
-  border: 2px solid white;
-  border-radius:15px;
+  width: 30vw;
+  height: 26vh;
+  margin-top:4em;
+  margin-right: 1.5em;
+  padding: 1em;
+  background-color: var(--cardColor);
+  box-shadow: 2px 2px 8px rgb(0,0,0);
+  border: 2px solid var(--fontColor);
+  border-radius: 0.9em;
 }
 
 .container-main h4{ 
-  color: rgb(62, 107, 69);
-  text-shadow:1px 1px 2px white;
+  color: var(--defaulColor);
+  text-shadow:1px 1px 2px var(--fontColor);
 }
 
 footer {
-  width: 100vw;
-  height:10vh;
   position: fixed;
   bottom: 0;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: rgb(36, 138, 27);
-  color: white;
-  font-style: italic;
 }

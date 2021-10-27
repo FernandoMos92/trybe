@@ -4,9 +4,10 @@ class Header extends Component {
   render() {
     return (
     <header>
-      <h1 className="title-header">Conteúdo de Front-end</h1>
+      <h1 className="title-header generic-class">Conteúdo de Front-end</h1>
     </header>
     )
+    
   }
 }
 
