@@ -1,0 +1,53 @@
+html{
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height:10vh;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(36, 138, 27);
+  color: white;
+  font-style: italic;
+}
+
+main {
+  display:flex;
+  height: 90vh;
+  overflow: auto;
+  padding: 20px;
+}
+
+.container-main{
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  overflow: auto;
+  margin-top:4rem;
+  padding: 20px;
+  background-color: rgb(158, 157, 157);
+  box-shadow: 2px 2px 8px black;
+  border: 2px solid white;
+  border-radius:15px;
+}
+
+.container-main h4{ 
+  color: rgb(62, 107, 69);
+  text-shadow:1px 1px 2px white;
+}
+
+footer {
+  width: 100vw;
+  height:10vh;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(36, 138, 27);
+  color: white;
+  font-style: italic;
+}
