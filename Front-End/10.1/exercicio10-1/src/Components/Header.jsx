@@ -7,6 +7,7 @@ class Header extends Component {
       <h1 className="title-header generic-class">Conteúdo de Front-end</h1>
     </header>
     )
+    
   }
 }
 
