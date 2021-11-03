@@ -8,7 +8,6 @@ class Pokedex extends Component {
         return (
             <div className="pokedex-frame">
                 <div className="display-pokedex">
-                    
                     <Pokemon/>
                 </div>
             </div>

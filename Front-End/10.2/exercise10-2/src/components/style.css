@@ -4,6 +4,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.display-pokedex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card-pokemon {
     width: 10em;
     text-align: center;
