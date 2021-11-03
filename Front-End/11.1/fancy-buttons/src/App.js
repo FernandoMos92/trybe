@@ -7,8 +7,8 @@ class App extends Component {
       countClick: 0,
       countClick1: 0,
       countClick2: 0, 
+     
     }
-  this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = () => {
@@ -26,14 +26,15 @@ class App extends Component {
   handleClick2 = () => {
     this.setState((previusState, _props) => ({
       countClick2: previusState.countClick2 + 1 
-    }))
+    }))    
   }
+
     render() {
       return (
         <>
         <button onClick={this.handleClick}>{this.state.countClick}</button>
         <button onClick={this.handleClick1}>{this.state.countClick1}</button>
-        <button onClick={this.handleClick2}>{this.state.countClick2}</button>
+        <button onClick={this.handleClick2} style={{backgroundColor:  this.state.countClick2 % 2 === 0 ? 'green' : 'yellow'}}>{this.state.countClick2}</button>
         </>
       );
     }
