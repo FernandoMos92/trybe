@@ -1,7 +1,12 @@
+@font-face {
+  font-family:Simpsons;
+  src: url('../font/SimpsonfontDEMO.otf');
+}
 :root { 
   --defaulColor: rgb(36, 138, 27);
   --fontColor: rgb(255, 255, 255);
   --cardColor: rgba(158, 157, 157, 0.74);
+  --fontFamily: Simpsons;
 }
 
 html{
