@@ -1,0 +1,20 @@
+.pokedex-frame {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display-pokedex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-pokemon {
+    width: 10em;
+    text-align: center;
+    border: 2px groove black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    margin: 20px;
+}
