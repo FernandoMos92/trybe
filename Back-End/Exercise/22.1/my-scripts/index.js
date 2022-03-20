@@ -3,15 +3,17 @@ const imc = require('./imc');
 const velocidade = require('./velocidade');
 const sorteio = require('./sorteio');
 const fatorial = require('./fatorial');
+const fibonacci = require('./fibonacci');
 
 const execScript = () => {
-  const allScript = [imc, velocidade, sorteio, fatorial];
+  const allScript = [imc, velocidade, sorteio, fatorial, fibonacci];
   console.log('===== SELECIONE QUAL FUNÇÃO QUER USAR =====');
   console.log(`
     1. IMC;
     2. VELOCIDADE;
     3. SORTEIO;
     4. FATORIAL;
+    5. FIBONACCI;
   `);
   const userSelect = readline.questionInt(`Qual opção deseja? \n`);
   if (userSelect > allScript.length) {
@@ -31,6 +33,9 @@ const execScript = () => {
       break;
     case 4:
         allScript[3]()
+      break;
+    case 5:
+        allScript[4]()
       break;
     default:
       break;
