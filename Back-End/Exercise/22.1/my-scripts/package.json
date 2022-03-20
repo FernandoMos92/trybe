@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "fatorial": "node fatorial.js",
     "sorteio": "node sorteio.js",
     "imc": "node imc.js",
     "velocidade": "node velocidade.js",
