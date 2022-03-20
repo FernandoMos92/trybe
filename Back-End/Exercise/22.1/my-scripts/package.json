@@ -4,6 +4,7 @@
   "description": "Script for carrying out the activities of the day.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "sorteio": "node sorteio.js",
     "imc": "node imc.js",
     "velocidade": "node velocidade.js",

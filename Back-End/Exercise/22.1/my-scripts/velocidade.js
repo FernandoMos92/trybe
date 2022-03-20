@@ -9,4 +9,4 @@ const velocidade = () => {
   console.log(`${(metros / tempo).toFixed(2)} M/s`)
 }
 
-velocidade();
+module.exports = velocidade;

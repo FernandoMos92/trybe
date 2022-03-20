@@ -27,4 +27,4 @@ function calculatorImc() {
   return verifyCondicional(resultImc);
 }
 
-calculatorImc();
+module.exports = calculatorImc;
