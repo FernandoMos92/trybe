@@ -13,3 +13,14 @@ function exercise01(input1, input2, input3) {
     resolve(result);
   })
 }
+
+const randomNumber = () => Math.floor(Math.random()*100 + 1);
+
+const callDoMath = () => {
+ const arr = Array.from({length: 3}).map(randomNumber);
+ return arr;
+}
+
+exercise01(...callDoMath())
+  .then((response) => console.log(response))
+  .catch((err) => console.log(err));
