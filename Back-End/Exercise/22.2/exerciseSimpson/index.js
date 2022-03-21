@@ -13,4 +13,16 @@ function findSimpsonId(id) {
    }) 
 }
 
-console.log(findSimpsonId(15));
+function changeSimpson() {
+  fs.readFile(data, 'utf8')
+    .then(data => {
+      const response = JSON.parse(data);
+      const newArray = response.filter((el) => Number(el.id) !== 6 
+        && Number(el.id) !== 10);
+      console.log(newArray);
+    })
+    .catch (() => {
+      throw new Error('Erro, não concluida a alteração')
+    })
+}
+
